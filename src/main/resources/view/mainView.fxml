@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<BorderPane
+        xmlns="http://javafx.com/javafx/11.0.2"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="main.java.controllers.MainController">
+    <top>
+        <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <fx:include fx:id="navigation" source="navigationView.fxml" />
+            <fx:include fx:id="breadcrumb" source="breadcrumbView.fxml" />
+            <fx:include fx:id="search" source="searchView.fxml" />
+        </HBox>
+    </top>
+    <left>
+       <fx:include fx:id="tree" source="treeView.fxml"/>
+    </left>
+    <center>
+        <fx:include fx:id="list" source="listView.fxml"/>
+    </center>
+    <bottom>
+        <fx:include fx:id="status" source="statusView.fxml"/>
+    </bottom>
+</BorderPane>

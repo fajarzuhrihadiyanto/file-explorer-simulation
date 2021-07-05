@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+
+<ButtonBar buttonMinWidth="20.0" prefHeight="40.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.NavigationController">
+    <buttons>
+        <Button fx:id="backwardBtn" mnemonicParsing="false" style="-fx-background-color: rgba(0,0,0,0);">
+            <graphic>
+                <ImageView fitHeight="20" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../images/leftChevron.png" />
+                </ImageView>
+            </graphic>
+            <tooltip><Tooltip text="Go backward" /></tooltip>
+        </Button>
+        <Button fx:id="forwardBtn" mnemonicParsing="false" style="-fx-background-color: rgba(0,0,0,0);">
+            <graphic>
+                <ImageView fitHeight="20" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../images/rightChevron.png" />
+                </ImageView>
+            </graphic>
+            <tooltip><Tooltip text="Go forward" /></tooltip>
+        </Button>
+        <Button fx:id="upBtn" mnemonicParsing="false" style="-fx-background-color: rgba(0,0,0,0);">
+            <graphic>
+                <ImageView fitHeight="20" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../images/upChevron.png" />
+                </ImageView>
+            </graphic>
+            <tooltip><Tooltip text="Go to parent" /></tooltip>
+        </Button>
+
+        <Button fx:id="newFolderBtn" mnemonicParsing="false" style="-fx-background-color: rgba(0,0,0,0);">
+            <graphic>
+                <ImageView fitHeight="20" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../images/addFolder.png" />
+                </ImageView>
+            </graphic>
+            <tooltip><Tooltip text="Create new folder" /></tooltip>
+        </Button>
+
+        <Button fx:id="newFileBtn" mnemonicParsing="false" style="-fx-background-color: rgba(0,0,0,0);">
+            <graphic>
+                <ImageView fitHeight="20" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../images/addDocument.png" />
+                </ImageView>
+            </graphic>
+            <tooltip><Tooltip text="Create new file" /></tooltip>
+        </Button>
+    </buttons>
+    <padding><Insets right="20.0" /></padding>
+</ButtonBar>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane
+        xmlns="http://javafx.com/javafx/11.0.2"
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="main.java.controllers.BreadcrumbController"
+        pannable="true"
+        prefViewportHeight="40.0"
+        style="-fx-background-color: rgba(0,0,0,0);"
+        vbarPolicy="NEVER"
+        HBox.hgrow="ALWAYS">
+
+    <FlowPane fx:id="breadcrumbContainer" alignment="CENTER_LEFT" prefHeight="40.0">
+    </FlowPane>
+</ScrollPane>

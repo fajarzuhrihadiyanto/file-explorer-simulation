@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane alignment="CENTER" prefWidth="200.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.SearchController">
+    <TextField fx:id="searchInput">
+    </TextField>
+    <Button fx:id="closeBtn" mnemonicParsing="false" style="-fx-background-color: rgba(0,0,0,0);">
+        <graphic>
+            <ImageView fitHeight="20" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../images/closeSearch.png" />
+            </ImageView>
+        </graphic>
+        <tooltip><Tooltip text="Close search" /></tooltip>
+    </Button>
+</FlowPane>
